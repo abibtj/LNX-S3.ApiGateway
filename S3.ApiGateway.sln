@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LNX-S3.ApiGateway", "LNX-S3.ApiGateway", "{604878D5-8678-494A-A153-97DC3F207D40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{73200D6A-7407-4881-8E22-2E3F3030470B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6F13D6F4-A61E-4385-96D8-E502B9DECED9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S3.ApiGateway", "src\S3.ApiGateway\S3.ApiGateway.csproj", "{BA851D29-4DEA-4FC9-8F6B-9D5E3933C10B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA851D29-4DEA-4FC9-8F6B-9D5E3933C10B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA851D29-4DEA-4FC9-8F6B-9D5E3933C10B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA851D29-4DEA-4FC9-8F6B-9D5E3933C10B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA851D29-4DEA-4FC9-8F6B-9D5E3933C10B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{73200D6A-7407-4881-8E22-2E3F3030470B} = {604878D5-8678-494A-A153-97DC3F207D40}
+		{6F13D6F4-A61E-4385-96D8-E502B9DECED9} = {604878D5-8678-494A-A153-97DC3F207D40}
+		{BA851D29-4DEA-4FC9-8F6B-9D5E3933C10B} = {6F13D6F4-A61E-4385-96D8-E502B9DECED9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33C09039-4331-485C-87CD-47452A0B6928}
+	EndGlobalSection
+EndGlobal
