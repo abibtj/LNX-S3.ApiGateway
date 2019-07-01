@@ -14,4 +14,14 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.7.9" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\LNX-S3.Common\src\S3.Common\S3.Common.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Schools\Queries\" />
+  </ItemGroup>
+
 </Project>
