@@ -11,8 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6F13D6F4-A61
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "S3.ApiGateway", "src\S3.ApiGateway\S3.ApiGateway.csproj", "{BA851D29-4DEA-4FC9-8F6B-9D5E3933C10B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "S3.Common", "..\LNX-S3.Common\src\S3.Common\S3.Common.csproj", "{B19BD939-B85F-4D8F-84B9-A5E0B3A7FF1E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{BA851D29-4DEA-4FC9-8F6B-9D5E3933C10B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA851D29-4DEA-4FC9-8F6B-9D5E3933C10B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA851D29-4DEA-4FC9-8F6B-9D5E3933C10B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B19BD939-B85F-4D8F-84B9-A5E0B3A7FF1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B19BD939-B85F-4D8F-84B9-A5E0B3A7FF1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B19BD939-B85F-4D8F-84B9-A5E0B3A7FF1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B19BD939-B85F-4D8F-84B9-A5E0B3A7FF1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -35,7 +29,6 @@ Global
 		{73200D6A-7407-4881-8E22-2E3F3030470B} = {604878D5-8678-494A-A153-97DC3F207D40}
 		{6F13D6F4-A61E-4385-96D8-E502B9DECED9} = {604878D5-8678-494A-A153-97DC3F207D40}
 		{BA851D29-4DEA-4FC9-8F6B-9D5E3933C10B} = {6F13D6F4-A61E-4385-96D8-E502B9DECED9}
-		{B19BD939-B85F-4D8F-84B9-A5E0B3A7FF1E} = {6F13D6F4-A61E-4385-96D8-E502B9DECED9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {33C09039-4331-485C-87CD-47452A0B6928}

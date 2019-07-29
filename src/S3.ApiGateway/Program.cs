@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore;
+﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
+using S3.Common.Logging;
+using S3.Common.Metrics;
+using S3.Common.Mvc;
+using S3.Common.Vault;
+using System;
 
 namespace S3.ApiGateway
 {
@@ -19,6 +17,10 @@ namespace S3.ApiGateway
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+                .UseStartup<Startup>()
+                .UseLogging()
+                .UseVault()
+                .UseLockbox()
+                .UseAppMetrics();
     }
 }

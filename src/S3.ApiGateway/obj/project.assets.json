@@ -515,6 +515,15 @@
           "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll": {}
         }
       },
+      "CacheManager.Core/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/CacheManager.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CacheManager.Core.dll": {}
+        }
+      },
       "Consul/0.7.2.6": {
         "type": "package",
         "dependencies": {
@@ -565,6 +574,18 @@
         },
         "runtime": {
           "lib/netstandard1.3/Elasticsearch.Net.dll": {}
+        }
+      },
+      "FluentValidation/8.4.0": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.4.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.dll": {}
         }
       },
       "Jaeger/0.3.2": {
@@ -3446,6 +3467,22 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
+      "Ocelot/13.5.2": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "8.4.0",
+          "Microsoft.AspNetCore": "2.2.0",
+          "Microsoft.AspNetCore.MiddlewareAnalysis": "2.2.0",
+          "Microsoft.AspNetCore.Mvc": "2.2.0",
+          "Microsoft.Extensions.DiagnosticAdapter": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Ocelot.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Ocelot.dll": {}
+        }
+      },
       "OpenTracing/0.12.0": {
         "type": "package",
         "compile": {
@@ -3453,6 +3490,23 @@
         },
         "runtime": {
           "lib/netstandard2.0/OpenTracing.dll": {}
+        }
+      },
+      "OpenTracing.Contrib.NetCore/0.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Hosting.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Logging": "2.0.0",
+          "Microsoft.Extensions.Options": "2.0.0",
+          "OpenTracing": "0.12.0",
+          "System.Data.SqlClient": "4.6.0"
+        },
+        "compile": {
+          "lib/netcoreapp2.0/OpenTracing.Contrib.NetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/OpenTracing.Contrib.NetCore.dll": {}
         }
       },
       "Polly/7.1.0": {
@@ -6660,6 +6714,25 @@
         "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.xml"
       ]
     },
+    "CacheManager.Core/1.2.0": {
+      "sha512": "tmgwGDJlPNdSTb94Bx/0D3fDlkP+HIa80d1nCrXs+NjTgZR8JaQcslH+PHP2ebxPkM4CnijQVEMD+Dk8CvR41w==",
+      "type": "package",
+      "path": "cachemanager.core/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "cachemanager.core.1.2.0.nupkg.sha512",
+        "cachemanager.core.nuspec",
+        "lib/net40/CacheManager.Core.dll",
+        "lib/net40/CacheManager.Core.xml",
+        "lib/net45/CacheManager.Core.dll",
+        "lib/net45/CacheManager.Core.xml",
+        "lib/netstandard1.2/CacheManager.Core.dll",
+        "lib/netstandard1.2/CacheManager.Core.xml",
+        "lib/netstandard2.0/CacheManager.Core.dll",
+        "lib/netstandard2.0/CacheManager.Core.xml"
+      ]
+    },
     "Consul/0.7.2.6": {
       "sha512": "0inTc+PLbk/TELmdO12q5N/4lZ2kn5w2EmOqG0g686JXgr1OKEGPCuGZxWYE+NuROy7dwX/FBxKUTph7vuyjPA==",
       "type": "package",
@@ -6707,6 +6780,25 @@
         "lib/net46/Elasticsearch.Net.xml",
         "lib/netstandard1.3/Elasticsearch.Net.dll",
         "lib/netstandard1.3/Elasticsearch.Net.xml"
+      ]
+    },
+    "FluentValidation/8.4.0": {
+      "sha512": "/VApywgD2sqD3aB1tzub6SIItmwxXN0D5yAiP3kuFHmjYO1W+Ryi531/m4O03/hlfcYrBgewDJn7Jd1Xk0vTdw==",
+      "type": "package",
+      "path": "fluentvalidation/8.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidation.8.4.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net45/FluentValidation.dll",
+        "lib/net45/FluentValidation.xml",
+        "lib/netstandard1.1/FluentValidation.dll",
+        "lib/netstandard1.1/FluentValidation.xml",
+        "lib/netstandard1.6/FluentValidation.dll",
+        "lib/netstandard1.6/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml"
       ]
     },
     "Jaeger/0.3.2": {
@@ -9860,6 +9952,18 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
+    "Ocelot/13.5.2": {
+      "sha512": "eZYLCfO7Bqu3NKnQ1TR6tjWnjjtdwKcP7T3TdthAoVLRPTxnQw6g6Gc1RXNbrFm5UQ/2N4L2U9I4fHG4FuJz9Q==",
+      "type": "package",
+      "path": "ocelot/13.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Ocelot.dll",
+        "ocelot.13.5.2.nupkg.sha512",
+        "ocelot.nuspec"
+      ]
+    },
     "OpenTracing/0.12.0": {
       "sha512": "bGp7SSFE6YEUCts3npTvyAVnU4QznXLWKwkhhdlFnCD4bwgtxcNHTfE+KFYUPS0oR8j5L3YfQHUO2Ar2xjFBew==",
       "type": "package",
@@ -9878,6 +9982,20 @@
         "lib/netstandard2.0/OpenTracing.xml",
         "opentracing.0.12.0.nupkg.sha512",
         "opentracing.nuspec"
+      ]
+    },
+    "OpenTracing.Contrib.NetCore/0.6.0": {
+      "sha512": "Nz+X3l+QJ5UzBMB1FeU81cQ9lOlqHL5V+HuSawSjOk0RPrUF4b30ik0ukjsT9ZPO4V+jkN0vX+lbxQte97RwCA==",
+      "type": "package",
+      "path": "opentracing.contrib.netcore/0.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp2.0/OpenTracing.Contrib.NetCore.dll",
+        "lib/netcoreapp2.0/OpenTracing.Contrib.NetCore.pdb",
+        "lib/netcoreapp2.0/OpenTracing.Contrib.NetCore.xml",
+        "opentracing.contrib.netcore.0.6.0.nupkg.sha512",
+        "opentracing.contrib.netcore.nuspec"
       ]
     },
     "Polly/7.1.0": {
@@ -10112,6 +10230,7 @@
       "path": "runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
@@ -10125,6 +10244,7 @@
       "path": "runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
@@ -10138,6 +10258,7 @@
       "path": "runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
@@ -10151,7 +10272,6 @@
       "path": "runtime.native.system/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -10180,7 +10300,6 @@
       "path": "runtime.native.system.io.compression/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -10234,6 +10353,7 @@
       "path": "runtime.native.system.security.cryptography.openssl/4.3.2",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -10247,6 +10367,7 @@
       "path": "runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
@@ -10260,6 +10381,7 @@
       "path": "runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
@@ -10286,6 +10408,7 @@
       "path": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
@@ -10299,6 +10422,7 @@
       "path": "runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
@@ -10312,6 +10436,7 @@
       "path": "runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
@@ -10325,6 +10450,7 @@
       "path": "runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
@@ -10338,6 +10464,7 @@
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
@@ -10932,7 +11059,6 @@
       "path": "system.collections.nongeneric/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -11357,7 +11483,6 @@
       "path": "system.diagnostics.contracts/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -11509,7 +11634,6 @@
       "path": "system.diagnostics.fileversioninfo/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -11551,6 +11675,7 @@
       "path": "system.diagnostics.process/4.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -11741,6 +11866,7 @@
       "path": "system.diagnostics.tracesource/4.0.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -12615,6 +12741,7 @@
       "path": "system.net.http/4.3.2",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/Xamarinmac20/_._",
@@ -12804,6 +12931,7 @@
       "path": "system.net.security/4.3.2",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -13006,7 +13134,6 @@
       "path": "system.private.datacontractserialization/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.3/System.Private.DataContractSerialization.dll",
@@ -13174,7 +13301,6 @@
       "path": "system.reflection.emit/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -13210,7 +13336,6 @@
       "path": "system.reflection.emit.ilgeneration/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -13985,7 +14110,6 @@
       "path": "system.runtime.serialization.primitives/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -14058,7 +14182,6 @@
       "path": "system.runtime.serialization.xml/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -14313,7 +14436,6 @@
       "path": "system.security.cryptography.csp/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -14385,7 +14507,6 @@
       "path": "system.security.cryptography.openssl/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.6/System.Security.Cryptography.OpenSsl.dll",
@@ -14559,7 +14680,6 @@
       "path": "system.security.principal/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -15235,7 +15355,6 @@
       "path": "system.threading.tasks.parallel/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -15292,7 +15411,6 @@
       "path": "system.threading.thread/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -15332,7 +15450,6 @@
       "path": "system.threading.threadpool/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -15610,7 +15727,6 @@
       "path": "system.xml.xmldocument/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -15649,7 +15765,6 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -15720,7 +15835,6 @@
       "path": "system.xml.xpath/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -15816,10 +15930,13 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "CacheManager.Core >= 1.2.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.7.9",
+      "Ocelot >= 13.5.2",
+      "OpenTracing.Contrib.NetCore >= 0.6.0",
       "S3.Common_ >= 2.0.5"
     ]
   },
@@ -15848,9 +15965,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\Abeeb\\.nuget\\packages": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.org/api/v2/package/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
@@ -15870,6 +15985,10 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
+          "CacheManager.Core": {
+            "target": "Package",
+            "version": "[1.2.0, )"
+          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",
@@ -15890,6 +16009,14 @@
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
             "target": "Package",
             "version": "[1.7.9, )"
+          },
+          "Ocelot": {
+            "target": "Package",
+            "version": "[13.5.2, )"
+          },
+          "OpenTracing.Contrib.NetCore": {
+            "target": "Package",
+            "version": "[0.6.0, )"
           }
         },
         "imports": [
