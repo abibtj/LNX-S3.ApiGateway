@@ -515,6 +515,19 @@
           "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll": {}
         }
       },
+      "AutoMapper/8.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "System.Reflection.Emit": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.dll": {}
+        }
+      },
       "CacheManager.Core/1.2.0": {
         "type": "package",
         "compile": {
@@ -6106,7 +6119,7 @@
           "lib/netstandard2.0/VaultSharp.dll": {}
         }
       },
-      "S3.Common_/2.0.5": {
+      "S3.Common_/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -6130,6 +6143,7 @@
           "App.Metrics.Reporting.Console": "3.1.0",
           "App.Metrics.Reporting.Http": "3.1.0",
           "App.Metrics.Reporting.InfluxDB": "3.1.0",
+          "AutoMapper": "8.1.1",
           "Autofac": "4.9.2",
           "Autofac.Extensions.DependencyInjection": "4.4.0",
           "Consul": "0.7.2.6",
@@ -6726,6 +6740,23 @@
         "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll",
         "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.pdb",
         "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.xml"
+      ]
+    },
+    "AutoMapper/8.1.1": {
+      "sha512": "GKBliBukkLG0z/U0T4Jy+yEpr5bKDImQ9nEy/T8jqNulwNkWDjiEWa9TL4yCxIhleDbmVmw2xYSaJ3Eb2OcSUg==",
+      "type": "package",
+      "path": "automapper/8.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.8.1.1.nupkg.sha512",
+        "automapper.nuspec",
+        "lib/net461/AutoMapper.dll",
+        "lib/net461/AutoMapper.pdb",
+        "lib/net461/AutoMapper.xml",
+        "lib/netstandard2.0/AutoMapper.dll",
+        "lib/netstandard2.0/AutoMapper.pdb",
+        "lib/netstandard2.0/AutoMapper.xml"
       ]
     },
     "CacheManager.Core/1.2.0": {
@@ -15949,7 +15980,7 @@
         "vaultsharp.nuspec"
       ]
     },
-    "S3.Common_/2.0.5": {
+    "S3.Common_/1.0.0": {
       "type": "project",
       "path": "../../../LNX-S3.Common/src/S3.Common/S3.Common.csproj",
       "msbuildProject": "../../../LNX-S3.Common/src/S3.Common/S3.Common.csproj"
@@ -15964,7 +15995,7 @@
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.7.9",
       "Ocelot >= 13.5.2",
       "OpenTracing.Contrib.NetCore >= 0.6.0",
-      "S3.Common_ >= 2.0.5"
+      "S3.Common_ >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -16048,12 +16079,7 @@
           }
         },
         "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48"
+          "net461"
         ],
         "assetTargetFallback": true,
         "warn": true
