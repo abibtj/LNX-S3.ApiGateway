@@ -39,27 +39,23 @@ namespace S3.ApiGateway
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+                .AddJsonFile($"appsettings.ocelot.{env.EnvironmentName}.json", optional: true)
                 .AddJsonFile("appsettings.docker.json", optional: true)
-                .AddJsonFile("appsettings.ocelot.json", optional: true)
+                //.AddJsonFile("appsettings.ocelot.json", optional: true)
                 .AddEnvironmentVariables();
 
             Configuration = builder.Build();
         }
-
-        //public Startup(IConfiguration configuration)
-        //{
-        //    Configuration = configuration;
-        //}
 
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services.AddCustomMvc();
             services.AddSwaggerDocs();
             services.AddConsul();
-            services.AddJwt();
+            //services.AddJwt();
             //services.AddJaeger(); // Throwing exception
             services.AddOpenTracing();
-            services.AddRedis();
+            //services.AddRedis();
             services.AddAuthorization(x => x.AddPolicy("admin", p => p.RequireRole("admin")));
 
             services.AddCors(options =>
@@ -101,8 +97,8 @@ namespace S3.ApiGateway
             app.UseAllForwardedHeaders();
             app.UseSwaggerDocs();
             app.UseErrorHandler();
-            app.UseAuthentication();
-            app.UseAccessTokenValidator();
+            //app.UseAuthentication();
+            //app.UseAccessTokenValidator();
             app.UseServiceId();
             app.UseMvc();
             await app.UseOcelot();
