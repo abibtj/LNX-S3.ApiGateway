@@ -20,3 +20,4 @@ C:\Users\Abeeb\Documents\Visual Studio 2019\Projects\S3\LNX-S3.ApiGateway\src\S3
 C:\Users\Abeeb\Documents\Visual Studio 2019\Projects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Release\netcoreapp2.2\appsettings.ocelot.json
 C:\Users\Abeeb\Documents\Visual Studio 2019\Projects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Release\netcoreapp2.2\appsettings.ocelot.Development.json
 C:\Users\Abeeb\Documents\Visual Studio 2019\Projects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Release\netcoreapp2.2\appsettings.ocelot.Docker.json
+C:\Users\Abeeb\Documents\Visual Studio 2019\Projects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Release\netcoreapp2.2\Properties\launchSettings.json
