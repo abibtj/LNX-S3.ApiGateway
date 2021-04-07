@@ -23,3 +23,30 @@ C:\Users\Abeeb\Documents\Visual Studio 2019\Projects\S3\LNX-S3.ApiGateway\src\S3
 C:\Users\Abeeb\Documents\Visual Studio 2019\Projects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Debug\netcoreapp2.2\appsettings.ocelot.Development.json
 C:\Users\Abeeb\Documents\Visual Studio 2019\Projects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Debug\netcoreapp2.2\appsettings.ocelot.Docker.json
 C:\Users\Abeeb\Documents\Visual Studio 2019\Projects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Debug\netcoreapp2.2\appsettings.docker.json
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Debug\netcoreapp2.2\appsettings.ocelot.Development.json
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Debug\netcoreapp2.2\appsettings.ocelot.docker.json
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Debug\netcoreapp2.2\appsettings.ocelot.json
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Debug\netcoreapp2.2\S3.ApiGateway.deps.json
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Debug\netcoreapp2.2\S3.ApiGateway.runtimeconfig.json
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Debug\netcoreapp2.2\S3.ApiGateway.runtimeconfig.dev.json
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Debug\netcoreapp2.2\S3.ApiGateway.dll
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Debug\netcoreapp2.2\S3.ApiGateway.pdb
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Debug\netcoreapp2.2\S3.ApiGateway.Views.dll
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Debug\netcoreapp2.2\S3.ApiGateway.Views.pdb
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Debug\netcoreapp2.2\S3.Common.dll
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Debug\netcoreapp2.2\S3.Common.pdb
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\obj\Debug\netcoreapp2.2\S3.ApiGateway.csprojAssemblyReference.cache
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\obj\Debug\netcoreapp2.2\S3.ApiGateway.AssemblyInfoInputs.cache
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\obj\Debug\netcoreapp2.2\S3.ApiGateway.AssemblyInfo.cs
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\obj\Debug\netcoreapp2.2\S3.ApiGateway.csproj.CoreCompileInputs.cache
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\obj\Debug\netcoreapp2.2\S3.ApiGateway.RazorAssemblyInfo.cache
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\obj\Debug\netcoreapp2.2\S3.ApiGateway.RazorAssemblyInfo.cs
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\obj\Debug\netcoreapp2.2\S3.ApiGateway.RazorTargetAssemblyInfo.cache
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\obj\Debug\netcoreapp2.2\S3.ApiGateway.csproj.CopyComplete
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\obj\Debug\netcoreapp2.2\S3.ApiGateway.dll
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\obj\Debug\netcoreapp2.2\S3.ApiGateway.pdb
+C:\Users\ACER\source\repos\MyProjects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\obj\Debug\netcoreapp2.2\S3.ApiGateway.genruntimeconfig.cache

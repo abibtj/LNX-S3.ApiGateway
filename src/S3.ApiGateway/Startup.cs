@@ -24,16 +24,17 @@ using ConfigurationBuilder = Microsoft.Extensions.Configuration.ConfigurationBui
 using OpenTracing;
 using Ocelot.Middleware;
 using Ocelot.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 namespace S3.ApiGateway
 {
     public class Startup
     {
         private static readonly string[] Headers = new[] { "X-Operation", "X-Resource", "X-Total-Count" };
-        public IContainer Container { get; private set; }
+        //public IContainer Container { get; private set; }
         public IConfiguration Configuration { get; }
 
-        public Startup(IHostingEnvironment env)
+        public Startup(IWebHostEnvironment env)
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
@@ -45,8 +46,10 @@ namespace S3.ApiGateway
             Configuration = builder.Build();
         }
 
-        public IServiceProvider ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllers().AddNewtonsoftJson();
+
             services.AddCustomMvc();
             services.AddSwaggerDocs();
             services.AddConsul();
@@ -62,28 +65,44 @@ namespace S3.ApiGateway
                         cors.AllowAnyOrigin()
                             .AllowAnyMethod()
                             .AllowAnyHeader()
-                            .AllowCredentials()
+                            //.AllowCredentials()
                             .WithExposedHeaders(Headers));
             });
 
             services.AddOcelot(Configuration);
-                //.AddCacheManager();
+            //.AddCacheManager();
 
-            var builder = new ContainerBuilder();
-            builder.RegisterAssemblyTypes(Assembly.GetEntryAssembly())
-                    .AsImplementedInterfaces();
-            builder.Populate(services);
-            builder.AddRabbitMq();
-            builder.AddDispatchers();
+            //var builder = new ContainerBuilder();
+            //builder.RegisterAssemblyTypes(Assembly.GetEntryAssembly())
+            //        .AsImplementedInterfaces();
+            //builder.Populate(services);
+            //builder.AddRabbitMq();
+            //builder.AddDispatchers();
 
-            Container = builder.Build();
+            //Container = builder.Build();
 
-            return new AutofacServiceProvider(Container);
+            //return new AutofacServiceProvider(Container);
         }
 
+        // ConfigureContainer is where you can register things directly
+        // with Autofac. This runs after ConfigureServices so the things
+        // here will override registrations made in ConfigureServices.
+        // Don't build the container; that gets done for you by the factory.
+        public void ConfigureContainer(ContainerBuilder builder)
+        {
+            // Register your own things directly with Autofac, like:
+            //builder.RegisterModule(new MyApplicationModule());
+
+            builder.RegisterAssemblyTypes(Assembly.GetEntryAssembly())
+                .AsImplementedInterfaces();
+            builder.AddRabbitMq();
+            builder.AddDispatchers();
+        }
+
+
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public async void Configure(IApplicationBuilder app, IHostingEnvironment env,
-            IApplicationLifetime applicationLifetime, IConsulClient client,
+        public async void Configure(IApplicationBuilder app, IWebHostEnvironment env,
+            IHostApplicationLifetime applicationLifetime, IConsulClient client,
             IStartupInitializer startupInitializer)
         {
             if (env.IsDevelopment() || env.EnvironmentName == "local")
@@ -106,7 +125,7 @@ namespace S3.ApiGateway
             applicationLifetime.ApplicationStopped.Register(() =>
             {
                 client.Agent.ServiceDeregister(consulServiceId);
-                Container.Dispose();
+                //Container.Dispose();
             });
 
             await startupInitializer.InitializeAsync();

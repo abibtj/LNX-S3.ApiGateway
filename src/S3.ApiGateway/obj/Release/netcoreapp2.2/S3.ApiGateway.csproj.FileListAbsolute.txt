@@ -14,10 +14,4 @@ C:\Users\Abeeb\Documents\Visual Studio 2019\Projects\S3\LNX-S3.ApiGateway\src\S3
 C:\Users\Abeeb\Documents\Visual Studio 2019\Projects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\obj\Release\netcoreapp2.2\S3.ApiGateway.csproj.CopyComplete
 C:\Users\Abeeb\Documents\Visual Studio 2019\Projects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\obj\Release\netcoreapp2.2\S3.ApiGateway.dll
 C:\Users\Abeeb\Documents\Visual Studio 2019\Projects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\obj\Release\netcoreapp2.2\S3.ApiGateway.pdb
-C:\Users\Abeeb\Documents\Visual Studio 2019\Projects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Release\netcoreapp2.2\appsettings.Development.json
-C:\Users\Abeeb\Documents\Visual Studio 2019\Projects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Release\netcoreapp2.2\appsettings.docker.json
-C:\Users\Abeeb\Documents\Visual Studio 2019\Projects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Release\netcoreapp2.2\appsettings.json
-C:\Users\Abeeb\Documents\Visual Studio 2019\Projects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Release\netcoreapp2.2\appsettings.ocelot.json
-C:\Users\Abeeb\Documents\Visual Studio 2019\Projects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Release\netcoreapp2.2\appsettings.ocelot.Development.json
-C:\Users\Abeeb\Documents\Visual Studio 2019\Projects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Release\netcoreapp2.2\appsettings.ocelot.Docker.json
-C:\Users\Abeeb\Documents\Visual Studio 2019\Projects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\bin\Release\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\Abeeb\Documents\Visual Studio 2019\Projects\S3\LNX-S3.ApiGateway\src\S3.ApiGateway\obj\Release\netcoreapp2.2\S3.ApiGateway.csproj.CoreCompileInputs.cache
